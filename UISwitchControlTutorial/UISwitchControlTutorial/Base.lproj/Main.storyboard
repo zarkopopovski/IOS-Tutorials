@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UISwitchControlTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G46-e6-lON">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeStateAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="rKT-CS-pfT"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyG-16-X5w">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="127" y="186" width="204" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97b-XL-fyE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Manually Change State"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="91" y="281" width="218" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="manuallyChangeStateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M90-qJ-TcF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G46-e6-lON" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="156" id="Qwh-7n-XH2"/>
+                            <constraint firstItem="G46-e6-lON" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="WaA-yB-n8d"/>
+                            <constraint firstItem="97b-XL-fyE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aBo-2l-Vgi"/>
+                            <constraint firstItem="zyG-16-X5w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="bxs-ga-ebX"/>
+                            <constraint firstItem="zyG-16-X5w" firstAttribute="leading" secondItem="G46-e6-lON" secondAttribute="trailing" constant="35" id="cWn-65-7vh"/>
+                            <constraint firstItem="97b-XL-fyE" firstAttribute="top" secondItem="zyG-16-X5w" secondAttribute="bottom" constant="74" id="vEP-Ss-Kev"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="G46-e6-lON"/>
+                                <exclude reference="zyG-16-X5w"/>
+                                <exclude reference="97b-XL-fyE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Qwh-7n-XH2"/>
+                                <exclude reference="WaA-yB-n8d"/>
+                                <exclude reference="bxs-ga-ebX"/>
+                                <exclude reference="cWn-65-7vh"/>
+                                <exclude reference="aBo-2l-Vgi"/>
+                                <exclude reference="vEP-Ss-Kev"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="G46-e6-lON"/>
+                                <include reference="zyG-16-X5w"/>
+                                <include reference="97b-XL-fyE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Qwh-7n-XH2"/>
+                                <include reference="WaA-yB-n8d"/>
+                                <include reference="bxs-ga-ebX"/>
+                                <include reference="cWn-65-7vh"/>
+                                <include reference="aBo-2l-Vgi"/>
+                                <include reference="vEP-Ss-Kev"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonChangeState" destination="97b-XL-fyE" id="eII-js-77U"/>
+                        <outlet property="stateLabel" destination="zyG-16-X5w" id="Uqs-qM-MEs"/>
+                        <outlet property="switchControl" destination="G46-e6-lON" id="sdi-hW-obW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="315"/>
+        </scene>
+    </scenes>
+</document>

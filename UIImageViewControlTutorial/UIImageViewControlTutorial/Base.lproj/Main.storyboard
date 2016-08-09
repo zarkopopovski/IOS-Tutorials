@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIImageViewControlTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKW-NO-2lr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DKW-NO-2lr" secondAttribute="height" multiplier="1:1" id="771-KI-uhC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="771-KI-uhC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="771-KI-uhC"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTP-Mp-9qd">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchImageAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="AR4-2L-tc4"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DKW-NO-2lr" firstAttribute="top" secondItem="DTP-Mp-9qd" secondAttribute="bottom" constant="65" id="2gu-R1-vkZ"/>
+                            <constraint firstItem="DKW-NO-2lr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YrE-eL-Y8J"/>
+                            <constraint firstItem="DKW-NO-2lr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="dxA-WI-gGs"/>
+                            <constraint firstItem="DTP-Mp-9qd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="mco-L5-ujS"/>
+                            <constraint firstItem="DTP-Mp-9qd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="y5p-aH-ZdE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DKW-NO-2lr"/>
+                                <exclude reference="DTP-Mp-9qd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="mco-L5-ujS"/>
+                                <exclude reference="y5p-aH-ZdE"/>
+                                <exclude reference="2gu-R1-vkZ"/>
+                                <exclude reference="YrE-eL-Y8J"/>
+                                <exclude reference="dxA-WI-gGs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DKW-NO-2lr"/>
+                                <include reference="DTP-Mp-9qd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="mco-L5-ujS"/>
+                                <include reference="y5p-aH-ZdE"/>
+                                <include reference="2gu-R1-vkZ"/>
+                                <include reference="YrE-eL-Y8J"/>
+                                <include reference="dxA-WI-gGs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="DKW-NO-2lr" id="5Wr-5J-Wt6"/>
+                        <outlet property="switchImage" destination="DTP-Mp-9qd" id="fNV-aT-PU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="350.25"/>
+        </scene>
+    </scenes>
+</document>

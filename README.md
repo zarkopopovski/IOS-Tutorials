@@ -5,3 +5,4 @@ Sources from the published iOS Tutorials
 - Tutorial 02: Using UISegmentedControl component into your iOS App
 - Tutorial 03: Using UIPickerView component into your iOS App
 - Tutorial 04: Using UIDatePicker component into your iOS App
+- Tutorial 05: Using UIImageView component into your iOS App

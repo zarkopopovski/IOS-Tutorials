@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIAlertControllerTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-pf-srO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.72779633580000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="dRx-iu-xnh"/>
+                                    <constraint firstAttribute="width" constant="205" id="tH5-Li-8Hb"/>
+                                </constraints>
+                                <state key="normal" title="Show Standard Alert"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dRx-iu-xnh"/>
+                                        <exclude reference="tH5-Li-8Hb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dRx-iu-xnh"/>
+                                        <include reference="tH5-Li-8Hb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showStandardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQ3-P6-rrE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-Vc-9nN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.72779633580000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="9bh-RM-Ia3"/>
+                                    <constraint firstAttribute="width" constant="205" id="cv7-FF-SY9"/>
+                                </constraints>
+                                <state key="normal" title="Show Email Entry Alert"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9bh-RM-Ia3"/>
+                                        <exclude reference="cv7-FF-SY9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9bh-RM-Ia3"/>
+                                        <include reference="cv7-FF-SY9"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showEmailEntryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpp-0F-kpD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-Ya-Jnr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.72779633580000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="4DI-xm-G92"/>
+                                    <constraint firstAttribute="height" constant="46" id="fxt-Vx-vy8"/>
+                                </constraints>
+                                <state key="normal" title="Show Standard Action Sheet"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4DI-xm-G92"/>
+                                        <exclude reference="fxt-Vx-vy8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4DI-xm-G92"/>
+                                        <include reference="fxt-Vx-vy8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showStandardActionSheetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFS-5D-XfO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press buttons to see all types" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezw-0l-j2V">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIAlertController Styles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43E-2A-7rc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="41" y="101" width="318" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="43E-2A-7rc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0U6-ID-cpm"/>
+                            <constraint firstItem="5ZG-pf-srO" firstAttribute="top" secondItem="43E-2A-7rc" secondAttribute="bottom" constant="19" id="4WP-mS-qKY"/>
+                            <constraint firstItem="ezw-0l-j2V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="C4V-5F-d70"/>
+                            <constraint firstItem="OrO-Vc-9nN" firstAttribute="top" secondItem="5ZG-pf-srO" secondAttribute="bottom" constant="18" id="Shj-I4-gCo"/>
+                            <constraint firstItem="43E-2A-7rc" firstAttribute="top" secondItem="ezw-0l-j2V" secondAttribute="bottom" constant="14" id="b9o-Nz-BEw"/>
+                            <constraint firstItem="QQx-Ya-Jnr" firstAttribute="top" secondItem="OrO-Vc-9nN" secondAttribute="bottom" constant="46" id="by0-Oi-4qP"/>
+                            <constraint firstItem="5ZG-pf-srO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kDR-ie-TbF"/>
+                            <constraint firstItem="ezw-0l-j2V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="ncY-If-Kb8"/>
+                            <constraint firstItem="QQx-Ya-Jnr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rv6-yn-euW"/>
+                            <constraint firstItem="ezw-0l-j2V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbK-RJ-8K5"/>
+                            <constraint firstItem="OrO-Vc-9nN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szB-QC-7rF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5ZG-pf-srO"/>
+                                <exclude reference="OrO-Vc-9nN"/>
+                                <exclude reference="QQx-Ya-Jnr"/>
+                                <exclude reference="ezw-0l-j2V"/>
+                                <exclude reference="43E-2A-7rc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="C4V-5F-d70"/>
+                                <exclude reference="ncY-If-Kb8"/>
+                                <exclude reference="sbK-RJ-8K5"/>
+                                <exclude reference="0U6-ID-cpm"/>
+                                <exclude reference="b9o-Nz-BEw"/>
+                                <exclude reference="4WP-mS-qKY"/>
+                                <exclude reference="kDR-ie-TbF"/>
+                                <exclude reference="Shj-I4-gCo"/>
+                                <exclude reference="szB-QC-7rF"/>
+                                <exclude reference="by0-Oi-4qP"/>
+                                <exclude reference="rv6-yn-euW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5ZG-pf-srO"/>
+                                <include reference="OrO-Vc-9nN"/>
+                                <include reference="QQx-Ya-Jnr"/>
+                                <include reference="ezw-0l-j2V"/>
+                                <include reference="43E-2A-7rc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="C4V-5F-d70"/>
+                                <include reference="ncY-If-Kb8"/>
+                                <include reference="sbK-RJ-8K5"/>
+                                <include reference="0U6-ID-cpm"/>
+                                <include reference="b9o-Nz-BEw"/>
+                                <include reference="4WP-mS-qKY"/>
+                                <include reference="kDR-ie-TbF"/>
+                                <include reference="Shj-I4-gCo"/>
+                                <include reference="szB-QC-7rF"/>
+                                <include reference="by0-Oi-4qP"/>
+                                <include reference="rv6-yn-euW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelInfo" destination="43E-2A-7rc" id="igw-OI-eIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="350.25"/>
+        </scene>
+    </scenes>
+</document>

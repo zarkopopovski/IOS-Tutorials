@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="UINavigationControllerTutorial2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Way-RH-KZc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdc-b4-ewm">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.72779633580000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="UuE-Nc-Sek"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="b7e-X6-5eQ"/>
+                    </constraints>
+                    <state key="normal" title="Show Second">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="UuE-Nc-Sek"/>
+                            <exclude reference="b7e-X6-5eQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="UuE-Nc-Sek"/>
+                            <include reference="b7e-X6-5eQ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showSecondAction:" destination="-1" eventType="touchUpInside" id="qnj-iG-soH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bg-2v-sQ3">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.15770537009999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="D9p-bX-7KI"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="WrA-N0-P8s"/>
+                    </constraints>
+                    <state key="normal" title="Show Third">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="D9p-bX-7KI"/>
+                            <exclude reference="WrA-N0-P8s"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="D9p-bX-7KI"/>
+                            <include reference="WrA-N0-P8s"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showThirdAction:" destination="-1" eventType="touchUpInside" id="6b8-tN-Yvd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.52156862749999999" green="0.78039215689999997" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kdc-b4-ewm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6WZ-IL-qmo"/>
+                <constraint firstItem="Kdc-b4-ewm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="205" id="EVn-Dd-n9n"/>
+                <constraint firstItem="0Bg-2v-sQ3" firstAttribute="top" secondItem="Kdc-b4-ewm" secondAttribute="bottom" constant="34" id="cRk-xw-46Q"/>
+                <constraint firstItem="0Bg-2v-sQ3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l7z-D5-pNQ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Kdc-b4-ewm"/>
+                    <exclude reference="0Bg-2v-sQ3"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="cRk-xw-46Q"/>
+                    <exclude reference="l7z-D5-pNQ"/>
+                    <exclude reference="6WZ-IL-qmo"/>
+                    <exclude reference="EVn-Dd-n9n"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Kdc-b4-ewm"/>
+                    <include reference="0Bg-2v-sQ3"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="cRk-xw-46Q"/>
+                    <include reference="l7z-D5-pNQ"/>
+                    <include reference="6WZ-IL-qmo"/>
+                    <include reference="EVn-Dd-n9n"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

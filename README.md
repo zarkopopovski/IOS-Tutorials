@@ -12,3 +12,4 @@ Sources from the published iOS Tutorials
 - [Tutorial 09: UITableView Basics Part One](http://zharkopopovski.com/index.php/2016/08/20/uitableview-basics-part-one/)
 - [Tutorial 10: UITableView Basics Part Two](http://zharkopopovski.com/index.php/2016/08/28/uitableview-basics-part-two/)
 - [Tutorial 11: UITableView Basics Part Three](http://zharkopopovski.com/index.php/2016/09/02/uitableview-basics-part-three/)
+- [Tutorial 12: UITableView Customization and Custom UITableViewCell](http://zharkopopovski.com/index.php/2016/09/17/uitableview-customization-and-custom-uitableviewcell/)

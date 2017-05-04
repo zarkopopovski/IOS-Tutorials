@@ -1,0 +1,6 @@
+framework module Pods_BookmarkIN {
+  umbrella header "Pods-BookmarkIN-umbrella.h"
+
+  export *
+  module * { export * }
+}

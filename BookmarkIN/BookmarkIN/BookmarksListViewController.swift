@@ -82,7 +82,7 @@ class BookmarksListViewController: UIViewController, UITableViewDataSource, UITa
                 }
                 
             })
-            //bookmarkURLEntryAlert.dismiss(animated: true, completion: nil)
+            
         }
         
         let closeAction = UIAlertAction(title: "Close", style: .destructive) { (newAction) in
